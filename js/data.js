@@ -362,10 +362,9 @@ const KB = {
             { name: "WAMP 环境", path: "软件测试/rjcs/wamp/", icon: "📁", desc: "Apache 2.2.21 + PHP 5.5.27 + MySQL 5.5.28" },
             { name: "Android ADT 23.0.7", path: "Java开发/Android/android.kf/ADT-23.0.7.zip", icon: "📦", desc: "Eclipse Android开发插件" },
           ]},
-          { title: "MINI 工具集", items: [
-            { name: "Clash 代理", path: "工具与资源/MINI/MINI/111/clash/", icon: "📁", desc: "clash-verge + verge-mihomo + GeoIP/GeoSite" },
-            { name: "Minecraft 模组", path: "工具与资源/MINI/MINI/111/mc/", icon: "📁", desc: ".fabric模组(biolith/cactusconfig)" },
-            { name: "文件恢复工具", path: "工具与资源/MINI/MINI/Backup_2025-04-16/", icon: "📁", desc: "BurnLibrary + Restore.exe" },
+          { title: "其他工具（MINI 已移回根目录）", items: [
+            { name: "Eclipse IDE 备份", path: "归档文件/eclipse.rar", icon: "📦", desc: "519 MB 完整 Eclipse 压缩包" },
+            { name: "JAR 包合集", path: "归档文件/jar包.rar", icon: "📦", desc: "Java JAR 依赖合集" },
           ]},
           { title: "其他", items: [
             { name: "微PE信息", path: "工具与资源/WePE_64_V2.3.iso.txt", icon: "📄", desc: "WePE V2.3 x64" },
