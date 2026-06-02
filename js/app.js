@@ -36,6 +36,12 @@
             </div>
           `).join("")}
         </div>
+        <div class="section" style="margin-bottom:24px">
+          <a href="resume.html" style="display:block;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border-radius:10px;padding:24px 28px;text-decoration:none;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(37,99,235,.3)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <h3 style="font-size:18px;margin-bottom:4px">📋 个人简历</h3>
+            <p style="font-size:14px;opacity:.85;margin:0">查看我的完整简历 · 支持打印和导出 PDF</p>
+          </a>
+        </div>
         <div class="section">
           <h2>知识分类</h2>
           <div class="cards">
