@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人信息 · 徐祎昌</title>
+<style>
+  :root {
+    --primary: #1e293b;
+    --accent: #0078d4;
+    --text: #334155;
+    --text-light: #64748b;
+    --border: #e2e8f0;
+    --bg: #f8fafc;
+    --highlight: #eff6ff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif;
+    color: var(--text); background: #f1f5f9; line-height: 1.7;
+  }
+  .toolbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 10;
+    background: #fff; border-bottom: 1px solid var(--border);
+    padding: 10px 24px; display: flex; gap: 12px; justify-content: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,.04);
+  }
+  .toolbar a, .toolbar button {
+    font-size: 13px; color: var(--text); background: var(--bg);
+    border: 1px solid var(--border); padding: 6px 16px; border-radius: 6px;
+    cursor: pointer; text-decoration: none; transition: all .15s;
+  }
+  .toolbar a:hover, .toolbar button:hover { background: var(--highlight); border-color: var(--accent); color: var(--accent); }
+
+  .container {
+    max-width: 800px; margin: 64px auto 40px; background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,.06); border-radius: 4px; padding: 56px 60px;
+  }
+
+  .header { text-align: center; margin-bottom: 36px; }
+  .header h1 { font-size: 28px; color: var(--primary); letter-spacing: 3px; margin-bottom: 8px; }
+  .header .info { font-size: 14px; color: var(--text-light); }
+  .header .info span { margin: 0 10px; }
+
+  .section { margin-bottom: 28px; }
+  .section h2 {
+    font-size: 16px; color: var(--primary);
+    border-left: 3px solid var(--accent); padding-left: 10px; margin-bottom: 14px;
+  }
+
+  .match-card {
+    background: var(--highlight); border: 1px solid #bfdbfe;
+    border-radius: 8px; padding: 16px 20px; margin-bottom: 12px;
+  }
+  .match-card .jd { font-size: 13px; color: var(--accent); font-weight: 600; margin-bottom: 6px; }
+  .match-card .me { font-size: 14px; color: var(--text); }
+
+  ul { padding-left: 20px; }
+  ul li { font-size: 14px; color: var(--text); margin-bottom: 6px; }
+
+  .highlight-box {
+    background: linear-gradient(135deg, #eff6ff, #f0f9ff);
+    border: 1px solid #bae6fd; border-radius: 8px; padding: 20px 24px;
+    margin-bottom: 20px;
+  }
+  .highlight-box h3 { font-size: 15px; color: #0369a1; margin-bottom: 8px; }
+  .highlight-box p { font-size: 14px; color: var(--text); }
+
+  @media print {
+    body { background: #fff; }
+    .toolbar { display: none; }
+    .container { margin: 0; box-shadow: none; border-radius: 0; padding: 40px 48px; max-width: 100%; }
+  }
+  @media (max-width: 768px) {
+    .container { margin: 56px 12px 20px; padding: 32px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <a href="index.html">← 返回知识库</a>
+  <a href="resume.html">📋 简历</a>
+  <button onclick="window.print()">🖨️ 打印</button>
+</div>
+
+<div class="container">
+
+  <div class="header">
+    <h1>徐 祎 昌</h1>
+    <div class="info">
+      <span>📧 1359323942@qq.com</span>
+      <span>|</span>
+      <span>📱 19313190874</span>
+      <span>|</span>
+      <span>软件技术（中外合作）· 2023级</span>
+    </div>
+  </div>
+
+  <!-- ===== 核心匹配 ===== -->
+  <div class="section">
+    <h2>岗位匹配要点</h2>
+
+    <div class="match-card">
+      <div class="jd">Inventory and Asset Management — 资产管理与库存追踪</div>
+      <div class="me">独立完成 <strong>ERP 资产管理系统</strong>项目：撰写需求说明书、设计测试用例、使用 JMeter 压测。熟悉资产从入库到报废的全流程追踪逻辑，具备库存盘点与差异核对的实际项目经验。</div>
+    </div>
+
+    <div class="match-card">
+      <div class="jd">Configuration Management Databases — 配置管理数据库</div>
+      <div class="me">熟练掌握 <strong>MySQL 数据库</strong>设计与管理：独立完成 4 套完整数据库系统（电商、拍卖、团购、旅游），涵盖存储过程、触发器、视图、事务、索引优化。能够准确维护 CMDB 中的逻辑信息。</div>
+    </div>
+
+    <div class="match-card">
+      <div class="jd">Perform tasks with minimal direct supervision — 独立完成任务</div>
+      <div class="me">具备 <strong>6 个独立项目</strong>的完整执行经验（ERP 平台、Vue3 管理系统、房屋租赁系统、通讯录系统、Spring Boot 会议系统、HTTP 电商服务器），从需求分析到实现测试全流程自主完成。</div>
+    </div>
+
+    <div class="match-card">
+      <div class="jd">RMA Warranty Process — 供应商协调与保修流程</div>
+      <div class="me">通过中俄合作办学环境培养了<strong>双语沟通能力</strong>，有俄语基础认读能力。善于文档化工作流程（编写过全套工作手册），能够遵循 SLA 完成 RMA 信息处理、打包、发货与收货追踪。</div>
+    </div>
+
+    <div class="match-card">
+      <div class="jd">Data Bearing Device Destruction — 数据销毁与安全合规</div>
+      <div class="me">在项目开发中实践了<strong>数据安全意识</strong>：实现用户密码 MD5 加密、触发器自动校验数据完整性、事务保证数据一致性（COMMIT/ROLLBACK）。理解并遵守数据管理安全策略。</div>
+    </div>
+
+    <div class="match-card">
+      <div class="jd">Inventory Discrepancy Reconciliation — 库存差异核对与报告</div>
+      <div class="me">具备<strong>系统化测试思维</strong>：掌握 unittest + DDT 数据驱动测试 + Selenium 自动化测试，善于发现和报告异常。ERP 项目中使用 Excel 编写完整测试用例，具备差异核对与报告生成能力。</div>
+    </div>
+  </div>
+
+  <!-- ===== 核心项目 ===== -->
+  <div class="section">
+    <h2>直接相关项目</h2>
+
+    <div class="highlight-box">
+      <h3>ERP 资产管理系统</h3>
+      <p>独立完成需求分析、数据库设计、测试用例编写。系统涵盖资产入库、出库、盘点、报废全流程。部署地址：http://39.105.187.61:17238/。使用 JMeter 完成性能压测，确保系统在高并发下的稳定性。</p>
+      <p style="margin-top:8px;"><strong>关联 JD：</strong>IAM 任务 / 库存追踪 / SLA 合规 / 差异核对</p>
+    </div>
+
+    <div class="highlight-box">
+      <h3>Vue3 后台管理系统</h3>
+      <p>实现用户管理、权限管理、商品管理、订单管理、系统设置 6 大模块。通过 Mock API 模拟数据交互，Pinia 状态管理，支持数据表格展示与统计。</p>
+      <p style="margin-top:8px;"><strong>关联 JD：</strong>信息维护 / 数据准确性 / 逻辑信息更新</p>
+    </div>
+
+    <div class="highlight-box">
+      <h3>4 套 MySQL 数据库系统</h3>
+      <p>独立设计电商、拍卖、团购、旅游四大数据库。编写存储过程（游标+事务）、触发器（数据校验+自动加密）、视图、索引优化。熟练操作数据的增删改查与报表生成。</p>
+      <p style="margin-top:8px;"><strong>关联 JD：</strong>CMDB 维护 / 资产管理数据库 / 库存报表</p>
+    </div>
+  </div>
+
+  <!-- ===== 技能总结 ===== -->
+  <div class="section">
+    <h2>相关技能</h2>
+    <ul>
+      <li><strong>数据库管理：</strong>MySQL 建库建表、存储过程、触发器、事务、索引优化、数据备份</li>
+      <li><strong>测试能力：</strong>JMeter 压力测试、Selenium 自动化测试、unittest 单元测试、测试用例编写</li>
+      <li><strong>工具熟练：</strong>Excel 数据处理、PowerDesigner 数据建模、Git 版本控制、VS Code / Eclipse</li>
+      <li><strong>文档能力：</strong>需求说明书撰写、测试用例编写、工作手册编写（完成 9 册 Android 实训手册）</li>
+      <li><strong>语言能力：</strong>中文（母语）、俄语（简单认读，中俄合作办学环境）</li>
+      <li><strong>职业素养：</strong>注重流程合规、数据准确、安全保密；能在最少监督下独立完成任务</li>
+    </ul>
+  </div>
+
+  <!-- ===== 教育 ===== -->
+  <div class="section">
+    <h2>教育背景</h2>
+    <p style="font-size:14px;"><strong>软件技术（中外合作办学）</strong> · 咸宁职业技术学院 · 2023.09 - 2026.06</p>
+    <p style="font-size:13px;color:var(--text-light);margin-top:4px;">主修：Java程序设计 / Java Web / MySQL数据库 / Python / 软件测试 / ERP系统</p>
+  </div>
+
+</div>
+</body>
+</html>
